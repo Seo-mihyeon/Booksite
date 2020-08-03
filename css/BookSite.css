@@ -1,0 +1,58 @@
+/*홈페이지 전면의 스타일 정의*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*{
+	font-family: 'nanumgothic'; 
+}
+*{
+	color: #000000;
+	text-decoration: none;
+}
+/* 전체 마우스 커서 올릴시 발생하는 이벤트 
+*:hover{
+	color: #bbbbbb;
+	text-decoration: none;
+	cursor: pointer;
+}*/
+/*내비게이션 영역*/
+.navbar-default .navbar-brand{ /* 제목 색상*/
+	color:#000000;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus { /* 제목위에 마우스 올렸을 경우*/
+	background-color: transparent;
+	color: #bbbbbb;
+}
+
+.navbar-default .navbar-nav > .active >a,
+.navbar-default .navbar-nav > .active >a:hover,
+.navbar-default .navbar-nav > .active >a:focus{ /* 현재 선택된 내비게이션 색상 이벤트 */
+	color: #bbbbbb;
+
+}
+.navbar-default .navbar-nav > li >a:hover,
+.navbar-default .navbar-nav > li >a:focus{ /* 내비게이션 글자에 마우스를 올렸을 때의 이벤트 */
+	color: #bbbbbb;
+}
+
+.navbar-default .navbar-nav > .open >a,
+.navbar-default .navbar-nav > .open >a:hover,
+.navbar-default .navbar-nav > .open >a:focus{ /* dropdown 이 열렸을때 마우스색상 이벤트  */
+	color: #bbbbbb;
+	text-decoration: none;
+
+}
+
+.navbar-default .navbar-nav > li > a { /* 내비게이션 기본 색상 */
+	color: black;
+}
+
+
+@media (max-width: 767px) { /* 해상도가 작을 때 dropdown 아이템에 마우스를 올렸을 때*/
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #bbbbbb;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus{
+		color: #bbbbbb;
+}

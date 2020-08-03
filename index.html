@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width", initial-scale="1"> 
+		<title>Booksile</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/BookSite.css">
+
+	</head>
+	<body>
+		<style type="text/css">
+			.jumbotron{
+				background-image: url('images/book3.jpg');
+				background-size: cover;
+				text-shadow: black 0.1em 0.1em 0.1em;
+				color:white;
+			}
+			.main{
+				position: absolute;
+				top: 450px;
+				left: 450px;
+
+
+			}
+			.search{
+				position: absolute; 
+				left:450px; 
+				top: 400px;
+			}
+
+			.category {
+				position: absolute;
+				left: 40px;
+				top: 450px;
+			}
+			
+			.login{
+				text-align: center;
+				position: absolute;
+				top: 450px;
+				right : 40px;
+				width:200px;
+		        border: 1px solid gray;
+		        border-radius: 5px;
+		        padding: 10px;
+
+			}
+			.famous{
+				text-align: center;
+				position: absolute;
+				top : 650px;
+				right: 40px;
+				width: 200px;
+				height: 150px;
+				border: 1px solid gray;
+		        border-radius: 5px;
+				padding: 10px;
+
+			}
+
+			
+
+		</style>
+		<nav class= "navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1" aria-expandend="flase">
+						<span class ="sr-only"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">북실북실</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">홈<span class="sr-only"></span></a></li>
+						<li><a href="#">독서모임</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false">메뉴 <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"> 1</a></li>
+								<li><a href="#"> 2</a></li>
+								<li><a href="#"> 3</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="검색어 입력" >
+						</div>
+						<button type="submit" class="btn btn-default">검색</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false">접속하기 <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+								<li><a href="#"> 로그인</a></li>
+								<li><a href="#"> 회원가입</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class ="jumbotron">
+				<h1 class="text-center">북실북실을 소개합니다.</h1>
+				<p class="text-center">북실북실은 도서 사이트와 독서모임을 겸비한 사이트입니다.</p>
+			</div>
+		</div>
+	<div class="search">
+	  <div class="col-lg-6">
+	    <div class="input-group">
+	      <div class="input-group-btn">
+	        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+	        <ul class="dropdown-menu" role="menu">
+	          <li><a href="#">Action</a></li>
+	          <li><a href="#">Another action</a></li>
+	          <li><a href="#">Something else here</a></li>
+	          <li class="divider"></li>
+	          <li><a href="#">Separated link</a></li>
+	        </ul>
+	      </div><!-- /btn-group -->
+	      	<input type="text" class="form-control" aria-label="..." placeholder="내용을 입력하세요">
+	      	<span class="input-group-btn">
+        		<button class="btn btn-default" type="button">검색</button>
+      		</span>
+	    </div><!-- /input-group -->
+	  </div><!-- /.col-lg-6 -->
+	</div><!-- /.search -->
+	<div class="category">
+        <ul>
+        	<h4>국내도서</h4>
+        	<li><a class="active" href="#">국내도서</a></li>
+        	<h4>외국도서</h4>
+        	<li><a class="active" href="#">외국도서</a></li>
+        	<h4>E-Book</h4>
+        	<li><a class="active" href="#">E-Book</a></li>
+        	<h4>음반</h4>
+
+        	<li><a class="active" href="#">음반</a></li>
+        </ul>
+    </div>
+
+    
+    <div class="login">
+    	<h4>로그인창</h4>
+    	<form>
+	 	아이디  <input id='userid' type='text'/><br>
+ 		비밀번호  <input id='pwd' type='password'/><br>
+		 <input type='submit' value='로그인'>
+		 <input type='submit' value="회원가입">
+		</form>
+    </div>
+    <div class= "famous">
+    	<p> 오늘의 명언 칸</p>
+    </div>
+<content>
+    <div class="main">
+	  <div class="col-xs-6 col-md-3">
+	    <a href="#" class="thumbnail">
+	      <img src="..." alt="...">
+	    </a>
+	    <a href="#" class="thumbnail">
+	      <img src="..." alt="...">
+	    </a>
+	    <a href="#" class="thumbnail">
+	      <img src="..." alt="...">
+	    </a>
+	    <a href="#" class="thumbnail">
+	      <img src="..." alt="...">
+	    </a>
+	  </div>
+	</div>
+</content>
+
+    <footer style="background-color:white; color: black">
+    	<div class="container">
+    		<br>
+    		<div class="row">
+    			<div class="col-sm-12" style="text-align: center;"><h5>Copyright &copy; 2020</h5>서미현(Mihyeon Seo)</div>
+    		</div>
+   		</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+	</body>
+</html>
